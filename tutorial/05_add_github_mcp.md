@@ -9,7 +9,7 @@ The following steps will guide you through the process of adding the GitHub MCP 
 1. Open the VS Code Extensions view and click on "Enable MCP Servers Marketplace" if you haven't done so already.
 ![enable mcp](./screenshots/enable_mcp.png)
 
-2. Install the "GitHub MCP Server" from the Marketplace.
+2. Install the "GitHub MCP Server" from the Marketplace. If you are asked to enter a GitHub PAT, just leave the input field empty and continue. The MCP server will in that case ask you to login with your GitHub account in the Browser. 
 
 ![add_gh_mcp_1](./screenshots/add_gh_mcp_01.png)
 

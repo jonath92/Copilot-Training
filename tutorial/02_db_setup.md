@@ -24,3 +24,9 @@ You can see your current usage in percent [here](https://github.com/settings/cop
 The number of premium requests used for chat interactions depends on the [model](https://docs.github.com/en/copilot/concepts/billing/copilot-requests#model-multipliers) you select (for some models no premium request is used) and the [feature](https://docs.github.com/en/copilot/concepts/billing/copilot-requests#premium-features) you use
 
 If you do many request, you might be rate limited (https://docs.github.com/en/copilot/concepts/rate-limits#what-to-do-if-you-are-rate-limited). 
+
+## Which model should I choose?
+While the suggestion is partially a personal preference, GitHub provides some guidance on which model to use for which task in the [docs](https://docs.github.com/en/copilot/reference/ai-models/model-comparison#recommended-models-by-task). Keep in mind that using more powerful models will consume more of your premium requests.Alternatively you can use the [Auto model selection](https://docs.github.com/en/copilot/concepts/auto-model-selection#overview) feature, which automatically selects the best model for your task based on your usage patterns and model availability. That way you get a discount and reduce the chances of rate limiting. 
+
+> [!NOTE]
+> In a later chapter, we will have a look at custom modes in which you can select the model depending on the task.
