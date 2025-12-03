@@ -8,6 +8,10 @@ on:
     branches: 
       - main
 
+permissions:
+  pull-requests: read # required for dorny/paths-filter
+  contents: read # required for checkout
+
 jobs: 
   path_filter: 
     runs-on: ubuntu-latest
