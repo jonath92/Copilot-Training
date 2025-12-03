@@ -4,6 +4,7 @@ In modern Software Development, Continuous Integration and Continuous Deployment
 # Task 
 In the `.github/workflows` directory, you already find a `ci_cd_db.yaml` GitHub Actions workflow file. This workflow is intended to check the database setup as part of the CI/CD process. For simplicity, we skip pushing the database as a Docker image to a container registry and only test the docker build process.
 
+- Checkout out a new branch from the main branch.
 - This time switch to the "Edit" mode in the Copilot Chat.
 
 > Edit mode is perfect when you know what you want to do but don’t necessarily want to write it all out yourself. You highlight a block of code, type in an instruction—perhaps something like “add error handling” or “refactor this using async/await”—and Copilot rewrites the code for you. But (and this is important) it doesn’t save anything without showing you the diff first. [source](https://github.blog/ai-and-ml/github-copilot/copilot-ask-edit-and-agent-modes-what-they-do-and-when-to-use-them/)
