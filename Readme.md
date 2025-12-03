@@ -22,7 +22,10 @@ To explore how AI can help us in this task, we will build a sample application w
 
 # Training Structure
 
+# TODO: 
+https://docs.github.com/en/enterprise-cloud@latest/copilot/tutorials/coding-agent/get-the-best-results#pre-installing-dependencies-in-github-copilots-environment
 
 
 # References
 - [VS Code Copilot Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
+- [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot)
