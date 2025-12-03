@@ -28,6 +28,7 @@ jobs:
           filters: |
             db:
               - 'db/**'
+              - 'ci_cd_db.yaml'
       
   ci-cd-db: 
     needs: path_filter

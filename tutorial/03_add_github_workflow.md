@@ -11,4 +11,10 @@ In the `.github/workflows` directory, you already find a `ci_cd_db.yaml` GitHub 
 
 - Go to the `ci_cd_db.yaml` file and select the area where the docker build should be implemented.
 - Ask Copilot in the "Edit" mode to implement the docker build for the database service. Hint: Copilot might want to push the image to a container registry, which we do not want in this case. Undo the suggestion and update your prompt to ask Copilot to only implement the build process without pushing to a registry.
-- Commit and push your changes to your remote repository and test if the workflow runs successfully.
+- Commit and push your changes to your remote repository and make a Pull Request to test if the workflow runs successfully.
+
+
+
+
+# Tips and Tricks
+- We have build a generic CI/CD workflow in the `ci_cd.yaml` file. We are using the [dorny/paths-filter](https://github.com/dorny/paths-filter) to trigger specific workflows based on the changed files in a Pull Request. That way, we save money and time and can easily add additional workflows in the future.
