@@ -16,3 +16,5 @@
 - It is recommended to keep the Tutorial Documents open in a Browser window while working on the tasks in the IDE. For better navigation, you can use the `Expand File Tree` view in Github
 
 ![expand_file_tre](./screenshots/expand_file_tree.png)
+
+- Open the Copilot Chat view in your IDE and type `@workspace describe the repo`. It should give you a short summary of the repository. This is a [chart participant](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features#_chat-participants) that helps you to get an overview of the repository at any time. Additional this will trigger the inital remote [indexing](https://code.visualstudio.com/docs/copilot/reference/workspace-context#_what-sources-are-used-for-context) of the repository 

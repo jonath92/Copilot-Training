@@ -27,9 +27,11 @@ To explore how AI can help us in this task, we will build a sample application w
 # TODO: 
 
 - https://github.com/spark
+- 
 
 
 # References
 - [VS Code Copilot Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
 - [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot)
 - [GitHub Copilot Blog](https://github.blog)
+- [GitHub Agentic Workflows](https://githubnext.github.io/gh-aw/)
