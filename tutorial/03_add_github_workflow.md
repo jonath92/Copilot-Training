@@ -15,7 +15,7 @@ In the `.github/workflows` directory, you already find a `ci_cd_db.yaml` GitHub 
 
 Click on the "Check" in the PR to inspect the workflow run. 
 
-![pr_check](image-2.png)
+![pr_check](./screenshots/pr_checks.png)
 
 - Fix any issues that might arise in the workflow until the workflow runs successfully. Also double check that even if the workflows was successful, the docker build step was executed.
 
