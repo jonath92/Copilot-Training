@@ -1,0 +1,19 @@
+# Introduction
+
+The way we have developed software in the past and how we will develop software in the future has changed. AI is now a standard tool in the developer's toolbox but due to the rapid pace of change, it is hard to keep up with the newest techniques and tools AI has to offer. We want to use the training to explore new opportunites of AI in the full software development lifecycle. 
+
+For this purpose, we will build a sample application where we will explore different AI tools that can help us in different stages of the software development lifecycle.
+
+# Sample Application
+
+As Software Developers, we are often asked to give estimations on how long it will take to implement a new feature or even a complete new application. Due to many unkown factors and changing requirements, this is very hard to do accurately. To explore how AI can help us in this task, we will build a sample application which should fullfill the following requirements:
+
+- A three-tier architecture with a frontend, backend and database
+- CI/CD pipeline to automatically build, test and deploy the application (for simplicity, we only build the docker images in the pipeline but do not deploy them)
+- The application should allow users to create, read, update and delete Tasks. Tasks have the following properties: 
+    - ID (unique identifier)
+    - Title (string)
+    - Description (string)
+    - Estimated Time to Complete (number, in hours)
+- A docker-compose to easily run the application locally
+- End2End tests to verify the functionality of the application
