@@ -6,7 +6,9 @@ For this purpose, we will build a sample application where we will explore diffe
 
 # Sample Application
 
-As Software Developers, we are often asked to give estimations on how long it will take to implement a new feature or even a complete new application. Due to many unkown factors and changing requirements, this is very hard to do accurately. To explore how AI can help us in this task, we will build a sample application which should fullfill the following requirements:
+As Software Developers, we are often asked to give estimations on how long it will take to implement a new feature or even a complete new application. Due to many unkown factors and changing requirements, this is very hard to do accurately. While it is understandable that stakeholders are interested in an estimation, it also creates pressue to the developers to deliver within the given timeframe. This pressure can be reduced by breaking down the implementation into smaller tasks and making the estimation more transparent by documenting the assumptions that were made during the estimation process. That way it is easier for developers to justify a delay in case the requirements change or unexpected technical challenges arise.
+
+To explore how AI can help us in this task, we will build a sample application which should fullfill the following requirements:
 
 - A three-tier architecture with a frontend, backend and database
 - CI/CD pipeline to automatically build, test and deploy the application (for simplicity, we only build the docker images in the pipeline but do not deploy them)
