@@ -22,3 +22,7 @@ To explore how AI can help us in this task, we will build a sample application w
 
 # Training Structure
 
+
+
+# References
+- [VS Code Copilot Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
