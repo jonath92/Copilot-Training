@@ -25,15 +25,15 @@ jobs:
             db:
               - 'db/**'
       
-    ci-cd-db: 
-      needs: path_filter
-      if: needs.path_filter.outputs.db_setup_changed == 'true'
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v3
+  ci-cd-db: 
+    needs: path_filter
+    if: needs.path_filter.outputs.db_setup_changed == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-        - name: Set up Database
-          run: |
-            echo "Setting up the database as changes were detected in the db/ folder."
-            # Add your database setup commands here
+      - name: Set up Database
+        run: |
+          echo "Setting up the database as changes were detected in the db/ folder."
+          # Add your database setup commands here
