@@ -10,5 +10,5 @@
 
 - Clone the repository to your local machine and open it in Visual Studio Code or an IDE of your choice.
 
-> :info:
+> [!WARNING]
 > It is up to you to decide which IDE you want to use. But keep in mind that some features might not be available in all IDEs. The tutorials have been tested with Visual Studio Code only. 
