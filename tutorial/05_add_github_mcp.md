@@ -27,3 +27,8 @@ The following steps will guide you through the process of adding the GitHub MCP 
 
 # Tipps and Tricks
 - MCP Servers can also be added by adding a `mcp.json` file to the `.vscode` folder in your workspace. See the [docs](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_other-options-to-add-an-mcp-server)
+- You can find a list of available Tools for the GitHub MCP server by clicking on the "Configure Tools" button in the GitHub Copilot Chat view.
+
+![configure_mcp](./screenshots/configure_mcp.png)
+
+In the list you than can also enable or disable specific tools according to your needs.
