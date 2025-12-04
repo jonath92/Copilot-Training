@@ -1,0 +1,45 @@
+version: 2
+updates:
+  # Enable version updates for Go modules in the backend directory
+  - package-ecosystem: "gomod"
+    directory: "/backend"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "go"
+      include: "scope"
+
+  # Enable version updates for Docker in the db directory
+  - package-ecosystem: "docker"
+    directory: "/db"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "jonath92"
+    assignees:
+      - "jonath92"
+    commit-message:
+      prefix: "docker"
+      include: "scope"
+
+  # Enable version updates for Docker in root directory (if there are any Dockerfiles)
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "jonath92"
+    assignees:
+      - "jonath92"
+    commit-message:
+      prefix: "docker"
+      include: "scope"
