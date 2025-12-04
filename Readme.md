@@ -22,7 +22,38 @@ To explore how AI can help us in this task, we will build a sample application w
     - Estimated Time to Complete 
 - End2End tests to verify the functionality of the application
 
+# Documentation
+
+Comprehensive documentation is available in the [`docs/`](docs/) directory:
+
+## Quick Links
+
+- **[Getting Started Guide](docs/guides/getting-started.md)** - Setup and run the application
+- **[Development Setup](docs/guides/development-setup.md)** - Detailed environment configuration
+- **[API Documentation](docs/api/README.md)** - Complete API reference with examples
+- **[Contributing Guidelines](docs/guides/contributing.md)** - How to contribute to the project
+
+## Architecture
+
+- **[System Architecture](docs/architecture/system-architecture.md)** - Overall design and component interactions
+- **[Database Design](docs/architecture/database-design.md)** - PostgreSQL schema and optimization
+- **[API Design](docs/architecture/api-design.md)** - RESTful API conventions and endpoints
+
+## Component Documentation
+
+- **[Backend](backend/README.md)** - Go backend service documentation
+- **[Frontend](frontend/README.md)** - Vite + TypeScript frontend documentation
+- **[Database](db/README.md)** - PostgreSQL setup and schema
+- **[E2E Testing](e2e/README.md)** - End-to-end testing with Playwright
+
+## Guides
+
+- **[Testing Guide](docs/guides/testing.md)** - Testing strategies and practices
+- **[Tutorial Materials](tutorial/)** - Step-by-step training modules
+
 # Training Structure
+
+The [tutorial](tutorial/) directory contains step-by-step modules for exploring GitHub Copilot and AI-assisted development. Follow the tutorials in order to learn different AI coding techniques and tools.
 
 # TODO: 
 
