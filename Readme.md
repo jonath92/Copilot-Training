@@ -22,14 +22,6 @@ To explore how AI can help us in this task, we will build a sample application w
     - Estimated Time to Complete 
 - End2End tests to verify the functionality of the application
 
-# Training Structure
-
-# TODO: 
-
-- https://github.com/spark
-- 
-
-
 # References
 - [VS Code Copilot Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
 - [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot)
