@@ -8,10 +8,12 @@
 
 - Give it a name of your choice and we recommend to keep the repository public for the duration of the training. This allows us to provide you better support in case you run into issues. 
 
-- Clone the repository to your local machine and open it in Visual Studio Code or an IDE of your choice.
+- Clone the repository to your local machine. You can either do this by 
 
 
 
+
+- Open the repository  in Visual Studio Code or an IDE of your choice.
 
 > [!WARNING]
 > It is up to you to decide which IDE you want to use. But keep in mind that some features might not be available in all IDEs. The tutorials have been tested with Visual Studio Code only. 
