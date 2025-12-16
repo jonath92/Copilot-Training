@@ -1,0 +1,226 @@
+openapi: 3.0.3
+info:
+  title: Task Estimation API
+  description: API for managing tasks with time estimations
+  version: 1.0.0
+  contact:
+    name: API Support
+
+servers:
+  - url: http://localhost:3000/api
+    description: Local development server
+
+paths:
+  /tasks:
+    get:
+      summary: Get all tasks
+      description: Retrieve a list of all tasks
+      operationId: getTasks
+      tags:
+        - Tasks
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    post:
+      summary: Create a new task
+      description: Create a new task with the provided details
+      operationId: createTask
+      tags:
+        - Tasks
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskInput'
+      responses:
+        '201':
+          description: Task created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '400':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /tasks/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        description: Unique identifier of the task
+        schema:
+          type: string
+
+    get:
+      summary: Get a task by ID
+      description: Retrieve a single task by its unique identifier
+      operationId: getTaskById
+      tags:
+        - Tasks
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '404':
+          description: Task not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    put:
+      summary: Update a task
+      description: Update an existing task with the provided details
+      operationId: updateTask
+      tags:
+        - Tasks
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskInput'
+      responses:
+        '200':
+          description: Task updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '400':
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Task not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    delete:
+      summary: Delete a task
+      description: Delete a task by its unique identifier
+      operationId: deleteTask
+      tags:
+        - Tasks
+      responses:
+        '204':
+          description: Task deleted successfully
+        '404':
+          description: Task not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    Task:
+      type: object
+      required:
+        - id
+        - title
+        - description
+        - estimatedTime
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the task
+          example: '1'
+        title:
+          type: string
+          description: Title of the task
+          example: 'Implement user authentication'
+        description:
+          type: string
+          description: Detailed description of the task
+          example: 'Add JWT-based authentication to the API endpoints'
+        estimatedTime:
+          type: number
+          description: Estimated time to complete the task in hours
+          example: 8
+
+    TaskInput:
+      type: object
+      required:
+        - title
+        - description
+        - estimatedTime
+      properties:
+        title:
+          type: string
+          description: Title of the task
+          minLength: 1
+          maxLength: 255
+          example: 'Implement user authentication'
+        description:
+          type: string
+          description: Detailed description of the task
+          example: 'Add JWT-based authentication to the API endpoints'
+        estimatedTime:
+          type: number
+          description: Estimated time to complete the task in hours
+          minimum: 0
+          example: 8
+
+    Error:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string
+          description: Error message
+          example: 'Task not found'
+        code:
+          type: string
+          description: Error code for programmatic handling
+          example: 'TASK_NOT_FOUND'
