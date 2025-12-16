@@ -15,6 +15,10 @@
 
 # FAQ
 
+
+
+
+
 ## How much does it cost me? 
 
 > If you're on a paid plan, you get unlimited inline suggestions and unlimited chat interactions using the included models (GPT-5 mini, GPT-4.1 and GPT-4o). Rate limiting is in place to accommodate for high demand. See Rate limits for GitHub Copilot. [docs](https://docs.github.com/en/copilot/concepts/billing/copilot-requests)
